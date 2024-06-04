@@ -1,0 +1,5 @@
+/* Set height to 100% so that vertical centering works, and the h100 classes work */
+
+html {
+    height: 100%;
+}
