@@ -59,6 +59,16 @@ body {
 .bg-black {
     background: #000 !important; 
 }
+/* This makes a white overlay that goes over the page */
+.overlay {
+    height: 100%;
+    width:  100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
 
 /*---------------------------------------------- MEDIA QUERIES */
 
@@ -81,5 +91,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* padding for collapsed navbar on mobile */
+@media (max-width: 991px) {
+    .header-container { 
+        padding-top:116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
