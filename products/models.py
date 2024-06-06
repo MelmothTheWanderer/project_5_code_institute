@@ -13,6 +13,10 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+    # This is a special Django class that changes the name of the plural in the admin.
+    class Meta: 
+        verbose_name_plural = 'Categories'
+
 
 class Product(models.Model):
     category = models.ForeignKey(
