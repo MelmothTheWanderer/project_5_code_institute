@@ -32,6 +32,5 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
     #Finally, just chuck this into the session that we created: 
     request.session['bag'] = bag
-    print(request.session['bag'])
     # Finally FINALLY we redirect the user back to the url that they came from using the imported redirect method: 
     return redirect(redirect_url)
